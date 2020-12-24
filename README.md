@@ -27,6 +27,30 @@ npm install -g express-generator
 express --view=pug Docker_Express
 ```
 
+## To install Docker compose.
+
+```sh
+sudo apt install docker-compose
+```
+
+## To build & run Docker compose.
+
+```sh
+sudo docker-compose up --build -d   // -d Run forever
+sudo docker-compose up              // run util CTRL+C exit
+
+sudo docker-compose pause
+sudo docker-compose unpause
+sudo docker-compose stop
+sudo docker-compose start
+
+sudo docker-compose down
+
+sudo docker-compose ps
+
+sudo docker-compose logs
+```
+
 ## To build & run Docker image.
 
 ```sh
@@ -95,3 +119,8 @@ df -h
 
 - [Docker compose NodeJS](https://rollout.io/blog/using-docker-compose-for-nodejs-development/)
 
+- [Docker compose Cheatsheet](https://devhints.io/docker-compose)
+
+- [Docker Cheatsheet](https://dockerlabs.collabnix.com/docker/cheatsheet/)
+
+- [Docker compose Node & MongoDB](https://www.digitalocean.com/community/tutorials/containerizing-a-node-js-application-for-development-with-docker-compose)
