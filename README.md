@@ -9,9 +9,13 @@ Make sure you have Node JS.
 git clone https://github.com/pritamkhose/Docker_Express.git
 cd Docker_Express
 npm install
+npm start
+
 
 npm install -g nodemon
 nodemon
+or
+npm start-dev
 
 ```
 
@@ -26,6 +30,27 @@ npm install -g express-generator
 
 express --view=pug Docker_Express
 ```
+
+## To install testing dev dependencies.
+
+```sh
+npm install --save-dev babel-cli babel-preset-env jest supertest superagent
+npm install --save-dev chai chai-http mocha
+```
+
+## To run jest testing by `npm run test`
+
+## To run chai & mocha testing by `npm run test-mocha`
+
+
+## To get Jest with HTML report `npm run test-CI` within test-report.html
+
+Install dependencies : `npm i jest-html-reporter --save-dev` and [Read more here](https://medium.com/@biswa8998/jest-with-html-report-a884b08d6635)
+
+## To get test code coverage with HTML report `npm run test -- --coverage`
+
+it will create html report file at `.\coverage\lcov-report\index.html`
+
 
 ## To install Docker compose.
 
@@ -124,3 +149,22 @@ df -h
 - [Docker Cheatsheet](https://dockerlabs.collabnix.com/docker/cheatsheet/)
 
 - [Docker compose Node & MongoDB](https://www.digitalocean.com/community/tutorials/containerizing-a-node-js-application-for-development-with-docker-compose)
+
+## Testing Link
+- [Testing frameworks compare](https://blog.logrocket.com/the-best-unit-testing-frameworks-for-node-js/)
+
+- [Example 1](https://www.albertgao.xyz/2017/05/24/how-to-test-expressjs-with-jest-and-supertest/)
+
+- [Example 2](https://dev.to/nedsoft/testing-nodejs-express-api-with-jest-and-supertest-1km6)
+
+- [Chai Example](https://www.digitalocean.com/community/tutorials/test-a-node-restful-api-with-mocha-and-chai)
+
+- [Chaijs](https://www.chaijs.com/guide/)
+
+- [Mochajs](https://mochajs.org/#getting-started)
+
+- [Jest](https://jestjs.io/docs/testing-frameworks)
+
+- [Unit and integration testing](https://blog.logrocket.com/unit-and-integration-testing-for-node-js-apps/)
+
+- [Example mocha and chai](https://www.digitalocean.com/community/tutorials/test-a-node-restful-api-with-mocha-and-chai)
