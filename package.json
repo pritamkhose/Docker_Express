@@ -3,7 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "start-dev": "nodemon ./bin/www",
+    "test": "jest",
+    "test-mocha": "mocha --timeout 10000",
+    "test-CI": "set CI=true &&jest test --env=jsdom --testResultsProcessor=./node_modules/jest-html-reporter"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -12,5 +16,21 @@
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "pug": "2.0.0-beta11"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "jest": "^27.0.6",
+    "mocha": "^9.0.1",
+    "superagent": "^6.1.0",
+    "supertest": "^6.1.3"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
   }
 }
