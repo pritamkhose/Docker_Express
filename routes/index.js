@@ -27,4 +27,8 @@ router.get("/api/request", function (req, res, next) {
   });
 });
 
+router.get("/api/env", function (req, res, next) {
+  res.json({ env: process.env });
+});
+
 module.exports = router;

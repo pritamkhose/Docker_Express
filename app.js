@@ -1,3 +1,4 @@
+require('custom-env').env(process.env.NODE_ENV);
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');

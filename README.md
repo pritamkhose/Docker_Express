@@ -127,6 +127,12 @@ sudo docker pull pritamkhose/docker-express:latest
 sudo docker push pritamkhose/docker-express
 ```
 
+## Deploy Docker image to Azure
+- [Deploy dockerhub image to azure docker create app](https://faun.pub/deploying-a-docker-container-in-azure-56249038603d)
+
+- [Deploy dockerhub image to azure docker create app](https://code.visualstudio.com/docs/containers/app-service)
+
+
 ## Ubuntu get storage space 
 ```sh
 df -h

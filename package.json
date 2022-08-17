@@ -4,13 +4,16 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "start-dev": "nodemon ./bin/www",
+    "start-nodemon": "nodemon ./bin/www",
+    "start-staging": "NODE_ENV=staging nodemon ./bin/www",
+    "start-prod": "NODE_ENV=prod nodemon ./bin/www",
     "test": "jest",
     "test-mocha": "mocha --timeout 10000",
     "test-CI": "set CI=true &&jest test --env=jsdom --testResultsProcessor=./node_modules/jest-html-reporter"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
+    "custom-env": "^2.0.1",
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
@@ -24,6 +27,7 @@
     "chai-http": "^4.3.0",
     "jest": "^27.0.6",
     "mocha": "^9.0.1",
+    "nodemon": "^2.0.19",
     "superagent": "^6.1.0",
     "supertest": "^6.1.3"
   },
